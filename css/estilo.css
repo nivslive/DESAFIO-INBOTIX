@@ -1,0 +1,501 @@
+
+
+
+
+
+
+
+
+
+
+/** PRINCIPAIS **/
+
+
+
+html, body{
+	height: 100%;
+	overflow-x: hidden;
+}
+
+
+body {
+	background:
+		        linear-gradient(90deg, rgba(197,242,255,1) 0%, rgba(253,255,255,1) 50%, rgba(198,254,255,1) 100%);
+	             background-attachment: fixed;
+
+}
+
+
+/** FIM PRINCIPAIS **/
+
+
+
+
+
+
+
+
+/** HOME **/
+
+
+#home {
+background: rgb(63,228,251);
+background: radial-gradient(circle, rgba(63,228,251,1) 0%, rgba(0,54,92,1) 100%);
+	color: white;
+}
+
+
+
+.home {
+background: rgb(63,228,251);
+background: radial-gradient(circle, rgba(5,10,70,1) 0%, rgba(0,54,92,1) 100%);
+	color: white;
+}
+
+
+/** FIM HOME **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**IMG HEADER**/
+
+img.imgborder{
+	position:  absolute;
+	padding-top: 20px;
+    max-width:90%;
+    max-height:90%;
+    width: auto;
+    height: auto;
+border-radius: 50%;
+          transform: translate(-2%, 8%);   
+
+}
+
+img.imgborder2{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position:  relative;
+	opacity: 0.2;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+border-radius: 50%;
+          transform: translate(20%, 0%);   
+          z-index: -1;
+
+}
+
+
+/**FIM IMG HEADER**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** ESTILIZAÇÃO ANIMAÇÃO BOTÕES HEADER **/
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(205,230,255); !important;
+animation: cor 2s linear infinite;}
+
+@keyframes cor {
+
+	to {
+		color: rgb(205,230,255); !important;;
+	}
+}
+
+/** FIM ESTILIZAÇÃO ANIMAÇÃO BOTÕES HEADER **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** CONFIGURAÇÃO COLUNAS **/
+
+
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+/** FIM CONFIGURAÇÃO **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** CONFIGURAÇÕES IMPLEMENTANDO NO BOOTSTRAP **/
+
+
+a {
+
+font-size: 30px;
+
+}
+
+
+.navbar-nav, .nav-link {
+
+display: !important;
+
+
+}
+
+
+.bg-css {
+
+background: rgb(46,133,218);
+background: radial-gradient(circle, rgba(46,133,218,1) 0%, rgba(7,35,46,1) 100%);
+}
+.btn-css {
+
+padding-top: 13px !important;
+
+}
+
+
+
+.btn-css-footer {
+color: white;
+
+}
+
+
+.btn-talk {
+
+animation: cor2 2s linear infinite; !important}
+
+@keyframes cor2 {
+
+	to {
+		color: rgb(205,230,255); !important;
+	}
+}
+
+
+
+
+
+/** FIM IMPLEMENTAÇÃO **/
+
+
+
+
+/** ANIMAÇÃO **/
+
+
+[data-anime] {
+  opacity: 0;
+  transition: .3s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"] {
+  transform: translate3d(0, -50px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/** FIM ANIMAÇÃO **/
+
+
+
+
+
+
+
+
+
+
+
+/** SPINNER **/
+
+.spinner{
+	position: aboslute;
+	border: 20px solid rgba(0, 0, 0, 0.3);
+	border-left-color: #22a6b3;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+animation: bounce 8s linear infinite;
+box-shadow: inset 0 0 1em #01e5fe, 0 0 5em #01efe;
+}
+
+.spinner2{
+	padding-left: 10px;
+	z-index: 2;
+	position: relative;
+	border: 20px solid rgba(0, 0, 0, 0.5);
+	border-right-color: #22f3f3;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+animation: bounce2 1s linear infinite;
+box-shadow: inset 0 0 1em #01e5fe, 0 0 5em #01efe;
+}
+
+
+
+/** ANIMAÇÕES(KEYFRAMES) SPINNER**/
+
+
+
+
+@keyframes bounce {
+to {transform:  rotate(360deg) translate(1px);
+  }
+}
+
+@keyframes bounce2 {
+to {transform:  rotate(-360deg) translate(1px);
+  }
+}
+
+
+
+
+/** FIM SPINNER **/
+
+
+
+
+
+
+
+
+
+
+/** RODAPÉ **/
+
+
+footer {
+
+	 margin-bottom: -20px auto !important;
+background: radial-gradient(circle, rgba(0,2,100,1) 0%, rgba(0,0,0,1) 100%);
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+footer h4 {
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+	color: white;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	float: right;
+	margin: 0 5px;
+}
+
+
+/** FIM RODAPÉ **/
+
+
+
+/** media ajustes footer **/
+@media only screen and (min-width : 1px) {
+  .alinharrodape {text-align: center;}
+  .containerfooter {padding-right:180px;}}
+
+
+@media only screen and (min-width: 800px) {
+.containerfooter {padding-left:250px;}
+.infos{display:none;}
+.faleconosco{display:none;}
+.redes{padding-left:90px;}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 860px) {
+
+  .editmedia {padding-left: 20%;}
+  .sumirmedia {display: none;}
+  .alinharmedia {text-align: center;}
+  .padding {padding-top: 10px; padding-bottom:20px;}
+  .paddingbottom {padding-bottom:20px;}
+  .paddingtop {padding-top:20px;}
+  .redes {padding-left:28px; padding-top:30px;}
+  .containerfooter{padding-left:170px;}
+}
+
+
+
+
+
+
+
+@media only screen and (max-width : 1000px) {
+
+.infos{display: none;}
+
+h4 {font-size: 1.0rem;}
+h1 {font-size:  1.0rem;}
+li {font-size:0.8rem;}
+
+}
+
+
+@media only screen and (min-width: 1100px) {
+.containerfooter {padding-left:200px;}
+.infos{display:block; padding-right:27px;}
+.faleconosco{display:block;}
+.redes {padding-left:20px;}
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width : 1200px) {
+
+.redes {margin-left:29px;}
+.infos{display: block;}
+.faleconosco{display:block;}
+h4 {font-size: 1.0rem;}
+h1 {font-size:  1.0rem;}
+li {font-size:0.8rem;}
+
+}
+
+
+
+@media only screen and (min-width: 1300px) {
+.containerfooter {padding-left:200px;}
+.infos{display: block;}
+
+h4 {font-size: 1.0rem;}
+h1 {font-size:  1.0rem;}
+li {font-size:0.8rem;}
+
+
+
+
+}
+
+
+
+/**fimmediajustes**/
+
+
+
+
+/**PARA TESTAR MEDIAS QUERIES **/
+
+
+
+/**footer {border:10px solid gold;}
+	footer{border:10px solid red;}
+footer {border:10px solid blue;}**/
+
+
+
+
+
+/** ATALHOS **/
+
+
+
+.align {text-align:center;}
+.spacing {padding-right:20px;}
+
+
+
+/** TESTS **/
+
+
+[data-css] {
+
+background: rgb(0,43,128);
+background: radial-gradient(circle, rgba(0,43,128,1) 0%;
+
+
+
+
+
+
+
