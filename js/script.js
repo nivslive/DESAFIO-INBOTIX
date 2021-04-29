@@ -1,3 +1,5 @@
+/** Implementação animação inicial **/
+
 const target = document.querySelectorAll ('[data-anime]');
 
 const animationClass = 'animate';
