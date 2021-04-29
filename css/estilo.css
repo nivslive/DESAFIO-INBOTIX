@@ -231,7 +231,6 @@ animation: cor2 2s linear infinite; !important}
 
 
 [data-anime] {
-  opacity: 0;
   transition: .3s;
 }
 
